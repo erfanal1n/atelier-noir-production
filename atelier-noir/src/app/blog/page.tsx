@@ -417,13 +417,15 @@ export default function Blog() {
                 className="group relative overflow-hidden bg-white/90 dark:bg-black/40 backdrop-blur-lg text-noir dark:text-pearl rounded-3xl cursor-pointer border border-noir/15 dark:border-pearl/20"
               >
                 <motion.div
-                  variants={glowEffect}
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.3 }}
                   className="p-8 lg:p-10 h-full relative z-10 rounded-3xl transition-all duration-300 border border-noir/15 dark:border-pearl/20 group-hover:border-gold/40 dark:group-hover:border-gold/60 group-hover:shadow-xl group-hover:shadow-gold/8"
                 >
-                  <motion.div variants={cardHover} className="h-full flex flex-col">
+                  <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.2 }} className="h-full flex flex-col">
                     <div className="flex items-start justify-between mb-6">
                       <motion.div 
-                        variants={iconFloat}
+                        whileHover={{ rotate: 5, scale: 1.1 }}
+                        transition={{ duration: 0.3 }}
                         className="flex h-18 w-18 lg:h-20 lg:w-20 items-center justify-center rounded-3xl bg-gradient-to-br from-gold/30 via-gold/20 to-gold/15 border border-gold/30 shadow-lg"
                       >
                         <PenTool className="h-10 w-10 lg:h-11 lg:w-11 text-gold drop-shadow-sm" />

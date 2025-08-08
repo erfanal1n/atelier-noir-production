@@ -76,7 +76,7 @@ export default function Header() {
               break
             }
             
-            backgroundElement = backgroundElement.parentElement
+            backgroundElement = backgroundElement.parentElement as Element
             maxDepth--
           }
           
