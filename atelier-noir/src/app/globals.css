@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 240 235; /* pearl */
+    --foreground: 17 17 17; /* noir */
+    --primary: 184 154 100; /* gold */
+  }
+  
+  .dark {
+    --background: 17 17 17; /* noir */
+    --foreground: 240 240 235; /* pearl */
+    --primary: 184 154 100; /* gold */
+  }
+
+
+  body {
+    @apply bg-pearl dark:bg-noir text-noir dark:text-pearl font-sans antialiased;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .transition-premium {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-lift {
+    @apply transition-premium hover:transform hover:-translate-y-1 hover:shadow-lg;
+  }
+  
+  .hover-gold {
+    @apply transition-premium hover:text-gold;
+  }
+  
+  
+  .asymmetric-grid {
+    display: grid;
+    grid-template-columns: 1.618fr 1fr;
+    gap: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .asymmetric-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 3s ease-in-out infinite;
+    transform: translateX(-100%);
+  }
+  
+  .animate-conic-border {
+    --border-width: 2px;
+    --angle: 0deg;
+    border: var(--border-width) solid transparent;
+    background-image: conic-gradient(from var(--angle), transparent 70%, #B89A64 90%, #B89A64 95%, transparent 100%);
+    background-origin: border-box;
+    -webkit-mask: linear-gradient(black, black) content-box, linear-gradient(black, black);
+    mask: linear-gradient(black, black) content-box, linear-gradient(black, black);
+    -webkit-mask-clip: content-box, border-box;
+    mask-clip: content-box, border-box;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: rotate-border 3s linear infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes rotate-border {
+    to {
+      --angle: 360deg;
+    }
+  }
+  
+  @property --angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-in-up-delay-1 {
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-up-delay-2 {
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-stagger > * {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .animate-stagger > *:nth-child(1) { animation-delay: 0.1s; opacity: 0; }
+  .animate-stagger > *:nth-child(2) { animation-delay: 0.2s; opacity: 0; }
+  .animate-stagger > *:nth-child(3) { animation-delay: 0.3s; opacity: 0; }
+  .animate-stagger > *:nth-child(4) { animation-delay: 0.4s; opacity: 0; }
+  .animate-stagger > *:nth-child(5) { animation-delay: 0.5s; opacity: 0; }
+  .animate-stagger > *:nth-child(6) { animation-delay: 0.6s; opacity: 0; }
+  
+  /* Animated Border Trail Effect - Smooth Light Trail */
+  .animated-border {
+    position: relative;
+    overflow: visible;
+    border-radius: 1.5rem;
+    container-type: inline-size;
+  }
+  
+  .animated-border::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(var(--canvas, #F0F0EB), var(--canvas, #F0F0EB)) content-box,
+                linear-gradient(45deg, rgba(184, 154, 100, 0.2), rgba(184, 154, 100, 0.1)) border-box;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    z-index: -1;
+  }
+  
+  .animated-border::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background: linear-gradient(90deg, 
+      transparent, 
+      rgba(255, 215, 0, 0.3) 10%,
+      rgba(255, 215, 0, 0.8) 30%, 
+      rgba(255, 255, 255, 0.9) 50%, 
+      rgba(255, 215, 0, 0.8) 70%,
+      rgba(255, 215, 0, 0.3) 90%, 
+      transparent
+    );
+    border-radius: 1px;
+    box-shadow: 
+      0 0 8px rgba(255, 215, 0, 0.4),
+      0 0 15px rgba(255, 215, 0, 0.2),
+      0 0 25px rgba(255, 215, 0, 0.1);
+    offset-path: border-box;
+    offset-anchor: center center;
+    offset-rotate: auto;
+    animation: trail-journey 8s infinite linear;
+    filter: blur(0.5px);
+  }
+  
+  @keyframes trail-journey {
+    to {
+      offset-distance: 100%;
+    }
+  }
+  
+  /* Slower trail for cards 4-6 */
+  .animated-border-slow {
+    position: relative;
+    overflow: visible;
+    border-radius: 1.5rem;
+    container-type: inline-size;
+  }
+  
+  .animated-border-slow::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(var(--canvas, #F0F0EB), var(--canvas, #F0F0EB)) content-box,
+                linear-gradient(45deg, rgba(184, 154, 100, 0.2), rgba(184, 154, 100, 0.1)) border-box;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    z-index: -1;
+  }
+  
+  .animated-border-slow::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background: linear-gradient(90deg, 
+      transparent, 
+      rgba(255, 215, 0, 0.3) 10%,
+      rgba(255, 215, 0, 0.8) 30%, 
+      rgba(255, 255, 255, 0.9) 50%, 
+      rgba(255, 215, 0, 0.8) 70%,
+      rgba(255, 215, 0, 0.3) 90%, 
+      transparent
+    );
+    border-radius: 1px;
+    box-shadow: 
+      0 0 8px rgba(255, 215, 0, 0.4),
+      0 0 15px rgba(255, 215, 0, 0.2),
+      0 0 25px rgba(255, 215, 0, 0.1);
+    offset-path: border-box;
+    offset-anchor: center center;
+    offset-rotate: auto;
+    animation: trail-journey 10s infinite linear;
+    filter: blur(0.5px);
+  }
+  
+  /* Premium hover effects for service cards */
+  .service-card {
+    position: relative;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    background: linear-gradient(135deg, rgba(240,240,235,0.1), rgba(240,240,235,0.05));
+    cursor: pointer;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-20px) scale(1.08);
+    box-shadow: 
+      0 40px 80px rgba(184, 154, 100, 0.4),
+      0 0 0 2px rgba(184, 154, 100, 0.8),
+      inset 0 0 60px rgba(184, 154, 100, 0.1);
+    background: linear-gradient(135deg, rgba(184, 154, 100, 0.15), rgba(184, 154, 100, 0.08));
+  }
+  
+  .service-card:hover .service-icon {
+    transform: scale(1.3) rotate(10deg);
+    filter: drop-shadow(0 8px 20px rgba(184, 154, 100, 0.8)) brightness(1.3);
+  }
+  
+  .service-card:hover .service-title {
+    color: #FFD700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    transform: scale(1.05);
+  }
+  
+  .service-card:hover .service-description {
+    color: rgba(255, 255, 255, 1);
+  }
+
+/* View Transition API for Theme Switching */
+.page-transition {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.page-transition.active {
+  opacity: 1;
+}
+
+@supports (view-transition-name: none) {
+  .page-transition {
+    transition: none;
+  }
+
+  ::view-transition-group(root) {
+    animation-duration: 0.7s;
+    animation-timing-function: linear(
+      0 0%, 0.2342 12.49%, 0.4374 24.99%,
+      0.6093 37.49%, 0.6835 43.74%,
+      0.7499 49.99%, 0.8086 56.25%,
+      0.8593 62.5%, 0.9023 68.75%, 0.9375 75%,
+      0.9648 81.25%, 0.9844 87.5%,
+      0.9961 93.75%, 1 100%
+    );
+  }
+
+  ::view-transition-new(root) {
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><filter id="blur"><feGaussianBlur stdDeviation="2"/></filter></defs><circle cx="0" cy="0" r="18" fill="white" filter="url(%23blur)"/></svg>') top right / 0 no-repeat;
+    mask-origin: content-box;
+    animation: scale 1s;
+    transform-origin: top right;
+  }
+
+  ::view-transition-old(root),
+  .dark::view-transition-old(root) {
+    animation: scale 1s;
+    transform-origin: top right;
+    z-index: -1;
+  }
+
+  @keyframes scale {
+    to {
+      mask-size: 350vmax;
+    }
+  }
+}
+}
