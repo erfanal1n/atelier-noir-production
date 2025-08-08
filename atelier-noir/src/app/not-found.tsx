@@ -68,8 +68,8 @@ export default function NotFound() {
           variants={fadeInUp}
           className="text-lg sm:text-xl text-noir/70 dark:text-pearl/70 mb-12 leading-relaxed"
         >
-          The page you're looking for seems to have wandered off into the creative void. 
-          Let's get you back on track with some beautiful destinations.
+          The page you&apos;re looking for seems to have wandered off into the creative void. 
+          Let&apos;s get you back on track with some beautiful destinations.
         </motion.p>
 
         <motion.div 

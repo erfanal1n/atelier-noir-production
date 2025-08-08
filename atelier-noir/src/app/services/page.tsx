@@ -410,7 +410,7 @@ export default function Services() {
               Every project is a collaboration between your vision and our expertise.
             </p>
             <p className="text-lg text-pearl/70 dark:text-pearl/70 max-w-3xl mx-auto leading-relaxed">
-              We don't just design—we solve problems, tell stories, and create connections that matter.
+              We don&apos;t just design—we solve problems, tell stories, and create connections that matter.
             </p>
           </motion.div>
         </motion.div>
@@ -433,7 +433,7 @@ export default function Services() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              Let's Create Together
+              Let&apos;s Create Together
             </motion.div>
             
             <h2 className="text-4xl font-bold tracking-tight text-noir dark:text-pearl sm:text-5xl lg:text-6xl mb-8">
@@ -442,7 +442,7 @@ export default function Services() {
             </h2>
             
             <p className="text-xl sm:text-2xl text-noir/80 dark:text-pearl/80 mb-6 leading-relaxed max-w-4xl mx-auto">
-              Every great project starts with a conversation. Share your vision, and we'll show you how we can bring it to life.
+              Every great project starts with a conversation. Share your vision, and we&apos;ll show you how we can bring it to life.
             </p>
             
             <p className="text-lg text-noir/70 dark:text-pearl/70 mb-12 leading-relaxed max-w-3xl mx-auto">

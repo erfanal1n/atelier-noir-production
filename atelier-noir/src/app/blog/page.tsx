@@ -490,7 +490,7 @@ export default function Blog() {
               Join Our Community
             </div>
             <h2 className="text-4xl font-bold text-pearl dark:text-pearl sm:text-5xl lg:text-6xl mb-8">
-              Let's Create
+              Let&apos;s Create
               <span className="block text-gold italic">Together</span>
             </h2>
             <p className="text-xl text-pearl/80 dark:text-pearl/80 max-w-3xl mx-auto leading-relaxed mb-12">

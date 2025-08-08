@@ -317,12 +317,12 @@ export default function BlogPost() {
                   </div>
 
                   <p className="text-lg text-noir/80 dark:text-pearl/80 leading-relaxed mb-8">
-                    This cultural renaissance isn't just about aesthetics—it's about storytelling. Modern South Asian brands are learning to weave narratives that resonate both locally and globally, creating emotional connections that transcend geographical boundaries.
+                    This cultural renaissance isn&apos;t just about aesthetics—it&apos;s about storytelling. Modern South Asian brands are learning to weave narratives that resonate both locally and globally, creating emotional connections that transcend geographical boundaries.
                   </p>
 
                   <div className="bg-gold/5 dark:bg-gold/10 border-l-4 border-gold rounded-r-2xl p-6 my-8">
                     <blockquote className="text-xl font-medium text-noir dark:text-pearl italic">
-                      "The most successful brands in our region are those that can tell a global story through a local lens."
+                      &quot;The most successful brands in our region are those that can tell a global story through a local lens.&quot;
                     </blockquote>
                     <cite className="text-noir/70 dark:text-pearl/70 text-sm mt-2 block">— Design Industry Report 2024</cite>
                   </div>
@@ -333,7 +333,7 @@ export default function BlogPost() {
                   </h3>
 
                   <p className="text-lg text-noir/80 dark:text-pearl/80 leading-relaxed mb-8">
-                    Several factors have contributed to this evolution, each playing a crucial role in shaping how brands approach their visual identity. Let's examine these transformative forces:
+                    Several factors have contributed to this evolution, each playing a crucial role in shaping how brands approach their visual identity. Let&apos;s examine these transformative forces:
                   </p>
 
                   <h4 className="text-xl font-semibold text-noir dark:text-pearl mb-4 mt-8">🚀 Digital Transformation</h4>
@@ -366,9 +366,9 @@ export default function BlogPost() {
                   </p>
 
                   <ul className="text-lg text-noir/80 dark:text-pearl/80 leading-relaxed mb-8 space-y-3 ml-6">
-                    <li>• <strong>Pathao's</strong> integration of rickshaw-inspired design elements</li>
-                    <li>• <strong>bKash's</strong> use of traditional Bengali color palettes</li>
-                    <li>• <strong>Chaldal's</strong> incorporation of local market aesthetics</li>
+                    <li>• <strong>Pathao&apos;s</strong> integration of rickshaw-inspired design elements</li>
+                    <li>• <strong>bKash&apos;s</strong> use of traditional Bengali color palettes</li>
+                    <li>• <strong>Chaldal&apos;s</strong> incorporation of local market aesthetics</li>
                   </ul>
 
                   <h3 id="authenticity-challenge" className="text-2xl font-bold text-noir dark:text-pearl mb-6 mt-12 flex items-center gap-3">
@@ -407,7 +407,7 @@ export default function BlogPost() {
 
                   <h4 className="text-xl font-semibold text-noir dark:text-pearl mb-4 mt-8">📈 Success Story: Case Study</h4>
                   <p className="text-lg text-noir/80 dark:text-pearl/80 leading-relaxed mb-6">
-                    <strong>Grameenphone's 2019 rebrand</strong> perfectly exemplifies this approach. They retained their iconic orange color (representing warmth and energy in Bengali culture) while modernizing their typography and introducing subtle patterns inspired by traditional Bengali art. 
+                    <strong>Grameenphone&apos;s 2019 rebrand</strong> perfectly exemplifies this approach. They retained their iconic orange color (representing warmth and energy in Bengali culture) while modernizing their typography and introducing subtle patterns inspired by traditional Bengali art. 
                   </p>
                   <p className="text-lg text-noir/80 dark:text-pearl/80 leading-relaxed mb-8">
                     <strong>The result?</strong> <em>25% increase in brand recall</em> and <em>18% growth in customer acquisition</em> within the first year.
@@ -514,7 +514,7 @@ export default function BlogPost() {
                       <span className="text-sm text-noir/60 dark:text-pearl/60">2 days ago</span>
                     </div>
                     <p className="text-noir/80 dark:text-pearl/80 leading-relaxed">
-                      Excellent insights on South Asian branding! As a designer working with local brands, I've seen firsthand how challenging it can be to balance cultural authenticity with global appeal.
+                      Excellent insights on South Asian branding! As a designer working with local brands, I&apos;ve seen firsthand how challenging it can be to balance cultural authenticity with global appeal.
                     </p>
                     <button className="text-sm text-gold hover:text-gold/80 font-medium mt-3">Reply</button>
                   </div>

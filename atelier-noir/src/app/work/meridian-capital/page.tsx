@@ -32,7 +32,7 @@ const processSteps = [
     phase: 'Discovery & Strategy',
     duration: '2 weeks',
     deliverables: ['Market Research', 'Competitive Analysis', 'Brand Audit', 'Strategic Framework'],
-    description: 'Deep dive into Meridian Capital\'s position in the financial services market and identification of key differentiators.'
+    description: 'Deep dive into Meridian Capital&apos;s position in the financial services market and identification of key differentiators.'
   },
   {
     phase: 'Brand Identity Design',
@@ -44,7 +44,7 @@ const processSteps = [
     phase: 'Digital Experience',
     duration: '4 weeks',
     deliverables: ['Website Design', 'User Experience', 'Mobile Optimization', 'Content Strategy'],
-    description: 'Development of a premium digital presence that reflects the brand\'s premium positioning and drives conversions.'
+    description: 'Development of a premium digital presence that reflects the brand&apos;s premium positioning and drives conversions.'
   },
   {
     phase: 'Launch & Optimization',
@@ -55,7 +55,7 @@ const processSteps = [
 ]
 
 const testimonial = {
-  quote: "Atelier Noir transformed our entire brand presence. The new identity perfectly captures our premium positioning in the financial services market, and the results speak for themselves - we've seen unprecedented growth since launch.",
+  quote: "Atelier Noir transformed our entire brand presence. The new identity perfectly captures our premium positioning in the financial services market, and the results speak for themselves - we&apos;ve seen unprecedented growth since launch.",
   author: "Sarah Mitchell",
   position: "CEO, Meridian Capital",
   company: "Meridian Capital"
@@ -177,7 +177,7 @@ export default function MeridianCapital() {
                 Outdated Brand Identity
               </h3>
               <p className="text-lg text-noir/80 dark:text-pearl/80 leading-relaxed mb-6">
-                Meridian Capital's existing brand identity failed to communicate their premium positioning in the competitive financial services market. Their digital presence was outdated, conversion rates were declining, and they were losing credibility with high-net-worth clients.
+                Meridian Capital&apos;s existing brand identity failed to communicate their premium positioning in the competitive financial services market. Their digital presence was outdated, conversion rates were declining, and they were losing credibility with high-net-worth clients.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -303,7 +303,7 @@ export default function MeridianCapital() {
             </div>
             
             <blockquote className="text-2xl lg:text-3xl font-medium text-noir dark:text-pearl leading-relaxed mb-12">
-              "{testimonial.quote}"
+              &quot;{testimonial.quote}&quot;
             </blockquote>
             
             <div className="flex items-center justify-center gap-4">
@@ -337,7 +337,7 @@ export default function MeridianCapital() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              Let's Create Together
+              Let&apos;s Create Together
             </motion.div>
             
             <h2 className="text-4xl font-bold tracking-tight text-noir dark:text-pearl sm:text-5xl lg:text-6xl mb-8">
@@ -346,7 +346,7 @@ export default function MeridianCapital() {
             </h2>
             
             <p className="text-xl text-noir/80 dark:text-pearl/80 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Let's create something exceptional together. Every project begins with understanding your unique vision and goals.
+              Let&apos;s create something exceptional together. Every project begins with understanding your unique vision and goals.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

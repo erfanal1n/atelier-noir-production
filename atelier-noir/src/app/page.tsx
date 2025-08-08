@@ -109,7 +109,7 @@ const testimonials = [
   },
   {
     id: 4,
-    content: "Their innovative approach to design and branding helped us stand out in a competitive market. The team's dedication and creativity exceeded all expectations.",
+    content: "Their innovative approach to design and branding helped us stand out in a competitive market. The team&apos;s dedication and creativity exceeded all expectations.",
     author: "Nasreen Sultana",
     position: "Creative Director",
     company: "Sylhet Media Group",
@@ -117,7 +117,7 @@ const testimonials = [
   },
   {
     id: 5,
-    content: "Professional, innovative, and results-driven. Atelier Noir delivered a complete brand transformation that perfectly captured our company's essence and values.",
+    content: "Professional, innovative, and results-driven. Atelier Noir delivered a complete brand transformation that perfectly captured our company&apos;s essence and values.",
     author: "Abdullah Rahman",
     position: "General Manager",
     company: "Khulna Industries",
@@ -682,7 +682,7 @@ export default function Home() {
               <span className="block text-gold italic">Say</span>
             </h2>
             <p className="text-xl sm:text-2xl text-noir/70 dark:text-pearl/70 max-w-4xl mx-auto leading-relaxed">
-              Don't just take our word for it. Here's what industry leaders say about working with Atelier Noir.
+              Don&apos;t just take our word for it. Here&apos;s what industry leaders say about working with Atelier Noir.
             </p>
           </motion.div>
           
@@ -723,7 +723,7 @@ export default function Home() {
                         </div>
                         
                         <p className="text-noir/80 dark:text-pearl/80 mb-6 leading-relaxed italic text-sm lg:text-base">
-                          "{testimonial.content}"
+                          &quot;{testimonial.content}&quot;
                         </p>
                         
                         <div className="border-t border-noir/10 dark:border-gray-600 pt-4">
@@ -985,7 +985,7 @@ export default function Home() {
                 <span className="block text-gold italic">brand?</span>
               </h2>
               <p className="text-xl sm:text-2xl text-noir/80 dark:text-pearl/80 mb-6 leading-relaxed max-w-4xl mx-auto">
-                Let's discuss how we can bring your vision to life with our signature blend of strategy and artistry.
+                Let&apos;s discuss how we can bring your vision to life with our signature blend of strategy and artistry.
               </p>
               <Link
                 href="/contact"

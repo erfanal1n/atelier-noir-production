@@ -90,14 +90,14 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
             <motion.div variants={fadeInUp} className="text-center lg:text-left">
               <h1 className="text-3xl font-bold tracking-tight text-noir dark:text-pearl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-6 sm:mb-8">
-                Let's create
+                Let&apos;s create
                 <span className="block text-gold italic">together</span>
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl text-noir/80 dark:text-pearl/80 leading-relaxed mb-6 sm:mb-8">
-                Ready to elevate your brand? We'd love to hear about your project and explore how we can bring your vision to life.
+                Ready to elevate your brand? We&apos;d love to hear about your project and explore how we can bring your vision to life.
               </p>
               <p className="text-base sm:text-lg text-noir/70 dark:text-pearl/70 leading-relaxed mb-8 sm:mb-12">
-                Whether you're launching something new or refreshing an existing brand, our collaborative approach ensures exceptional results that resonate with your audience.
+                Whether you&apos;re launching something new or refreshing an existing brand, our collaborative approach ensures exceptional results that resonate with your audience.
               </p>
               
               <div className="hidden sm:block space-y-6">
@@ -343,7 +343,7 @@ export default function Contact() {
               </div>
               <h3 className="text-lg sm:text-xl font-semibold text-noir dark:text-pearl mb-3 sm:mb-4">Initial Call</h3>
               <p className="text-sm sm:text-base text-noir/70 dark:text-pearl/70 leading-relaxed px-2">
-                We'll schedule a discovery call within 24 hours to discuss your project in detail and answer any questions.
+                We&apos;ll schedule a discovery call within 24 hours to discuss your project in detail and answer any questions.
               </p>
             </motion.div>
             
@@ -353,7 +353,7 @@ export default function Contact() {
               </div>
               <h3 className="text-lg sm:text-xl font-semibold text-noir dark:text-pearl mb-3 sm:mb-4">Proposal</h3>
               <p className="text-sm sm:text-base text-noir/70 dark:text-pearl/70 leading-relaxed px-2">
-                Within a week, you'll receive a detailed proposal outlining our approach, timeline, and investment.
+                Within a week, you&apos;ll receive a detailed proposal outlining our approach, timeline, and investment.
               </p>
             </motion.div>
             
