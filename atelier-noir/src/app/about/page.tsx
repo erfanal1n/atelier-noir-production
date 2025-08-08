@@ -128,7 +128,7 @@ export default function About() {
                 A collective of designers, strategists, and creative thinkers dedicated to crafting distinctive brand experiences.
               </p>
               <p className="text-lg text-noir/70 dark:text-pearl/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Founded in 2018, we've grown from a small studio into a recognized creative agency, working with ambitious brands who value sophisticated design and strategic thinking.
+                Founded in 2018, we&apos;ve grown from a small studio into a recognized creative agency, working with ambitious brands who value sophisticated design and strategic thinking.
               </p>
             </motion.div>
             
@@ -222,7 +222,7 @@ export default function About() {
             </div>
             <h2 className="text-4xl font-bold tracking-tight text-pearl dark:text-pearl sm:text-5xl lg:text-6xl mb-8 hover:text-gold transition-colors duration-500">Our Philosophy</h2>
             <p className="text-xl sm:text-2xl text-pearl/80 dark:text-pearl/80 max-w-4xl mx-auto leading-relaxed mb-6 hover:text-pearl dark:hover:text-pearl transition-colors duration-300">
-              Great design is invisible until it's not. We create experiences that feel effortless yet memorable.
+              Great design is invisible until it&apos;s not. We create experiences that feel effortless yet memorable.
             </p>
             <p className="text-lg text-pearl/70 dark:text-pearl/70 max-w-3xl mx-auto leading-relaxed hover:text-pearl/90 dark:hover:text-pearl/90 transition-colors duration-300">
               Every decision serves both beauty and purpose, creating sophisticated yet accessible solutions.
@@ -457,7 +457,7 @@ export default function About() {
                     {/* Content */}
                     <div className="ml-12 md:ml-0 mt-4 bg-pearl dark:bg-black/40 dark:backdrop-blur-lg rounded-2xl p-6 shadow-lg border border-noir/10 dark:border-pearl/20">
                       <h3 className="text-xl font-bold text-gold mb-3">Leading Innovation</h3>
-                      <p className="text-noir/70 dark:text-pearl/70 leading-relaxed">Today, we're recognized as one of the premier creative agencies in South Asia, continuously pushing creative boundaries.</p>
+                      <p className="text-noir/70 dark:text-pearl/70 leading-relaxed">Today, we&apos;re recognized as one of the premier creative agencies in South Asia, continuously pushing creative boundaries.</p>
                     </div>
                   </div>
                   
@@ -487,7 +487,7 @@ export default function About() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              Let's Collaborate
+              Let&apos;s Collaborate
             </motion.div>
             
             <h2 className="text-4xl font-bold tracking-tight text-noir dark:text-pearl sm:text-5xl lg:text-6xl mb-8">
@@ -496,7 +496,7 @@ export default function About() {
             </h2>
             
             <p className="text-xl sm:text-2xl text-noir/80 dark:text-pearl/80 mb-6 leading-relaxed max-w-4xl mx-auto">
-              We partner with forward-thinking brands who value the power of exceptional design. Let's create something remarkable together.
+              We partner with forward-thinking brands who value the power of exceptional design. Let&apos;s create something remarkable together.
             </p>
             
             <p className="text-lg text-noir/70 dark:text-pearl/70 mb-12 leading-relaxed max-w-3xl mx-auto">
