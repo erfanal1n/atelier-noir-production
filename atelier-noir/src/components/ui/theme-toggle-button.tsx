@@ -69,7 +69,7 @@ export default function ThemeToggleButton({
     }
 
     document.startViewTransition(switchTheme)
-  }, [theme, setTheme, variant, url])
+  }, [theme, setTheme, variant, url, updateStyles])
 
   const getIconColor = () => {
     if (isDarkBackground) {

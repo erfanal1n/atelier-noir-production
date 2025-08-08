@@ -48,7 +48,7 @@ export default function Header() {
         const sampleX = window.innerWidth / 2
         
         headerElement.style.pointerEvents = 'none'
-        let elementBehind = document.elementFromPoint(sampleX, sampleY)
+        const elementBehind = document.elementFromPoint(sampleX, sampleY)
         headerElement.style.pointerEvents = 'auto'
         
         if (elementBehind) {
@@ -140,7 +140,7 @@ export default function Header() {
             setIsDarkBackground(isMatBlack)
           }
         }
-      } catch (error) {
+      } catch {
         setIsDarkBackground(false)
       }
     }
@@ -208,9 +208,6 @@ export default function Header() {
     return 'hover:text-gold'
   }
 
-  const getActiveTextColor = () => {
-    return 'text-gold'
-  }
 
   return (
     <motion.header 

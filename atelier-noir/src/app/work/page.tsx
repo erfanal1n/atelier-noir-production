@@ -10,7 +10,6 @@ import {
   IconHeartHandshake,
   IconBrandPython,
   IconHanger2,
-  IconAward,
   IconBriefcase,
   IconDeviceDesktop
 } from '@tabler/icons-react'
@@ -158,7 +157,7 @@ export default function Work() {
                 A curated collection of projects that showcase our commitment to exceptional design and strategic thinking.
               </p>
               <p className="text-lg text-noir/70 dark:text-pearl/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Each project represents a unique collaboration, where we've helped brands discover their voice and connect with their audience in meaningful ways.
+                Each project represents a unique collaboration, where we&apos;ve helped brands discover their voice and connect with their audience in meaningful ways.
               </p>
             </motion.div>
             
@@ -291,7 +290,7 @@ export default function Work() {
             }`}
             key={activeCategory}
           >
-            {filteredProjects.map((project, index) => {
+            {filteredProjects.map((project) => {
               if (project.title === 'Meridian Capital') {
                 return (
                   <Link key={project.title} href="/work/meridian-capital">
@@ -601,7 +600,7 @@ export default function Work() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              Let's Create Together
+              Let&apos;s Create Together
             </motion.div>
             
             <h2 className="text-4xl font-bold tracking-tight text-noir dark:text-pearl sm:text-5xl lg:text-6xl mb-8">
@@ -610,11 +609,11 @@ export default function Work() {
             </h2>
             
             <p className="text-xl sm:text-2xl text-noir/80 dark:text-pearl/80 mb-6 leading-relaxed max-w-4xl mx-auto">
-              Let's discuss how we can bring your vision to life with the same dedication and craftsmanship you've seen here.
+              Let&apos;s discuss how we can bring your vision to life with the same dedication and craftsmanship you&apos;ve seen here.
             </p>
             
             <p className="text-lg text-noir/70 dark:text-pearl/70 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Every great project starts with a conversation. Share your vision, and we'll show you how we can make it extraordinary.
+              Every great project starts with a conversation. Share your vision, and we&apos;ll show you how we can make it extraordinary.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
