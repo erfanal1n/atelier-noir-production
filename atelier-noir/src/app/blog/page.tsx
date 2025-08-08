@@ -286,7 +286,7 @@ export default function Blog() {
               animate="rest"
               className="group relative overflow-hidden bg-white/90 dark:bg-black/40 backdrop-blur-lg rounded-2xl cursor-pointer border border-noir/10 dark:border-pearl/20 shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <motion.div variants={cardHover} className="p-8 lg:p-12">
+              <motion.div whileHover={{ scale: 1.02, y: -4 }} transition={{ duration: 0.3 }} className="p-8 lg:p-12">
                 <div className="flex flex-col lg:flex-row lg:gap-12 items-start">
                   {/* Content */}
                   <div className="flex-1 mb-8 lg:mb-0">

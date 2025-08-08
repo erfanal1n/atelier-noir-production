@@ -62,7 +62,7 @@ const glowEffect = {
     scale: 1.02,
     transition: {
       duration: 0.4,
-      ease: [0.25, 0.46, 0.45, 0.94]
+      ease: "easeOut"
     }
   }
 }
@@ -298,7 +298,8 @@ export default function About() {
                 className="group relative overflow-hidden bg-white/90 dark:bg-black/40 backdrop-blur-lg text-noir dark:text-pearl rounded-3xl cursor-pointer border border-noir/15 dark:border-pearl/20 group-hover:border-gold/40 dark:group-hover:border-gold/60 shadow-xl group-hover:shadow-2xl"
               >
                 <motion.div
-                  variants={glowEffect}
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.4 }}
                   className="relative z-10 rounded-3xl transition-all duration-300"
                 >
                   <div className="aspect-[3/4] bg-noir p-8 flex flex-col justify-between relative rounded-t-3xl">
