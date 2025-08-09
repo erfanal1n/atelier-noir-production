@@ -258,8 +258,8 @@ function Counter({ number, suffix, duration = 2000 }: { number: number; suffix: 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
-  const [touchStart, setTouchStart] = useState<number | null>(null)
-  const [touchEnd, setTouchEnd] = useState<number | null>(null)
+  const [touchStart, setTouchStart] = useState<{x: number, y: number} | null>(null)
+  const [touchEnd, setTouchEnd] = useState<{x: number, y: number} | null>(null)
   
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const [isTestimonialAutoPlaying, setIsTestimonialAutoPlaying] = useState(true)
@@ -286,20 +286,28 @@ export default function Home() {
 
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchEnd(null)
-    setTouchStart(e.targetTouches[0].clientX)
+    setTouchStart({
+      x: e.targetTouches[0].clientX,
+      y: e.targetTouches[0].clientY
+    })
     setIsAutoPlaying(false)
   }
 
   const handleTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX)
+    setTouchEnd({
+      x: e.targetTouches[0].clientX,
+      y: e.targetTouches[0].clientY
+    })
   }
 
   const handleTouchEnd = () => {
     if (!touchStart || !touchEnd) return
     
-    const distance = touchStart - touchEnd
-    const isLeftSwipe = distance > 30
-    const isRightSwipe = distance < -30
+    const deltaX = touchStart.x - touchEnd.x
+    const deltaY = touchStart.y - touchEnd.y
+    const isHorizontalSwipe = Math.abs(deltaX) > Math.abs(deltaY)
+    const isLeftSwipe = deltaX > 50 && isHorizontalSwipe
+    const isRightSwipe = deltaX < -50 && isHorizontalSwipe
 
     if (isLeftSwipe) {
       nextSlide()
@@ -345,11 +353,11 @@ export default function Home() {
       <section className="relative px-4 sm:px-6 py-8 sm:py-12 lg:px-8 lg:py-16 pb-40 sm:pb-48 lg:pb-20 overflow-hidden">
         <div className="mx-auto max-w-7xl">
           <div 
-            className="relative min-h-[70vh] sm:min-h-[75vh] lg:min-h-[85vh] touch-pan-x pb-20 sm:pb-24 lg:pb-32"
+            className="relative min-h-[70vh] sm:min-h-[75vh] lg:min-h-[85vh] pb-20 sm:pb-24 lg:pb-32"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
-            style={{ touchAction: 'pan-x' }}
+            style={{ touchAction: 'auto' }}
           >
             <AnimatePresence mode="wait">
               <motion.div
